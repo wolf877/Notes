@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect("./database/database.sqlite")
+conn = sqlite3.connect("../database/database.sqlite")
 
 cursor = conn.cursor()
 
@@ -15,9 +15,7 @@ cursor = conn.cursor()
 # T = a[0]
 # a, b, c, d = T
 # print(c)
-cursor.execute("DROP TABLE Class_1")
-# print(c)
-cursor.execute("DROP TABLE ClassAvalutions")
+
 
 conn.commit()
 conn.close()
